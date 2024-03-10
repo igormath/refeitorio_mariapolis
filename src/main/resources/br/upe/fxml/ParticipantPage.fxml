@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="100.0" stroke="#116ab4" strokeType="INSIDE" strokeWidth="3.0" width="1024.0" />
+      <ImageView fitHeight="55.0" fitWidth="520.0" layoutX="35.0" layoutY="31.0">
+         <image>
+            <Image url="@../../../../assets/mariapolislogo.png" />
+         </image>
+      </ImageView>
+      <Text fill="#116ab4" layoutX="40.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dados Do Participante: " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="40.0" layoutY="260.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.3" text="EVENTOS:" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutX="40.0" layoutY="273.0" prefHeight="75.0" prefWidth="596.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="75.0" prefWidth="565.0" />
+        </content>
+      </ScrollPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="395.0" layoutY="373.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1024.0" />
+      <Text fill="#116ab4" layoutX="40.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Refeições" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff3f" height="41.0" layoutX="25.0" layoutY="469.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+      <Text fill="#116ab4" layoutX="46.0" layoutY="498.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.3" text="Saldo disponível" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="33.0" layoutY="621.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.0" text="Almoço:" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="33.0" layoutY="541.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.0" text="Café da manhã: " textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="33.0" layoutY="581.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.0" text="Jantar:" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="178.0" layoutY="541.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="98.0" layoutY="581.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="113.0" layoutY="621.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <DatePicker layoutX="763.0" layoutY="392.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="90.0" layoutY="160.0" prefHeight="28.0" prefWidth="139.0" text="180.654.112-05">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text fill="#116ab4" layoutX="40.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF:" wrappingWidth="101.44775390625">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="40.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de nascimento:" wrappingWidth="318.78106689453125">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="40.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:" wrappingWidth="104.25">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="230.0" layoutY="182.0" prefHeight="28.0" prefWidth="139.0" text="05/05/2000">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="200.0" prefHeight="30.0" prefWidth="256.0" text="Roberto745@gmail.com">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="124.0" prefHeight="30.0" prefWidth="306.0" text="Roberto Amaral Silva Dos Santos">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ListView layoutX="417.0" layoutY="449.0" prefHeight="271.0" prefWidth="570.0" />
+      <ImageView fitHeight="96.0" fitWidth="108.0" layoutX="843.0" layoutY="6.0">
+         <image>
+            <Image url="@../../../../assets/voltar_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="73.0" layoutX="938.0" layoutY="26.0">
+         <image>
+            <Image url="@../../../../assets/botao-home%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

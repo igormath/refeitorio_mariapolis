@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.upe.centromariapolis.LoginPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="100.0" stroke="#116ab4" strokeType="INSIDE" strokeWidth="3.0" width="1024.0" AnchorPane.topAnchor="-8.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f3f3" height="564.0" layoutX="26.0" layoutY="176.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="977.0" />
+      <ImageView fitHeight="60.0" fitWidth="500.0" layoutX="17.0" layoutY="16.0">
+         <image>
+            <Image url="@../../../../assets/mariapolislogo.png" />
+         </image>
+      </ImageView>
+      <Circle fill="WHITE" layoutX="136.0" layoutY="267.0" radius="57.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Text fill="#116ab4" layoutX="21.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Perfil do funcionário" wrappingWidth="520.0001220703125">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="92.0" fitWidth="109.0" layoutX="84.0" layoutY="214.0">
+         <image>
+            <Image url="@../../../../assets/perfil.png" />
+         </image>
+      </ImageView>
+      <Text fill="#116ab4" layoutX="212.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rogéria Santana Da Silva" wrappingWidth="600.0001220703125">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Label layoutX="150.0" layoutY="350.0" prefHeight="28.0" prefWidth="139.0" text="568.254.321-01">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Text fill="#116ab4" layoutX="92.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF:" wrappingWidth="101.44775390625">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="92.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de nascimento:" wrappingWidth="318.78106689453125">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="92.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:" wrappingWidth="104.25">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="92.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Função:" wrappingWidth="138.7810821533203">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Label layoutX="330.0" layoutY="385.0" prefHeight="28.0" prefWidth="139.0" text="05/05/2000">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="412.0" prefHeight="30.0" prefWidth="256.0" text="ROgeria45@gmail.com">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="442.0" prefHeight="30.0" prefWidth="256.0" text="Atendente">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="96.0" fitWidth="108.0" layoutX="850.0" layoutY="-2.0">
+         <image>
+            <Image url="@../../../../assets/voltar_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="73.0" layoutX="945.0" layoutY="18.0">
+         <image>
+            <Image url="@../../../../assets/botao-home%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

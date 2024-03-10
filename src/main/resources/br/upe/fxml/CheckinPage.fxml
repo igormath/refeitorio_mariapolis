@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.upe.centromariapolis.CheckinPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="100.0" stroke="#116ab4" strokeType="INSIDE" strokeWidth="3.0" width="1044.0" />
+      <ImageView fitHeight="55.0" fitWidth="520.0" layoutX="35.0" layoutY="31.0">
+         <image>
+            <Image url="@../../../../assets/mariapolislogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="79.0" layoutX="840.0" layoutY="12.0">
+         <image>
+            <Image url="@../../../../assets/botao-home-2.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="325.0" layoutX="288.0" layoutY="405.0" stroke="WHITE" strokeType="INSIDE" width="497.0" />
+      <ChoiceBox layoutX="23.0" layoutY="222.0" prefHeight="26.0" prefWidth="2.0" />
+      <Button layoutX="480.0" layoutY="615.0" mnemonicParsing="false" onAction="#handleCheckinSuccess" prefHeight="33.0" prefWidth="100.0" text="Iniciar" textAlignment="CENTER" textFill="#116ab4">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="455.0" layoutY="660.0" mnemonicParsing="false" onAction="#handleCheckinFailed" prefHeight="39.0" prefWidth="152.0" text="Temp Failed" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="176.0" layoutY="224.0" prefHeight="32.0" prefWidth="212.0" text="Almoço">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="259.0" prefHeight="32.0" prefWidth="315.0" text="Domingo, 12 de novembro de 2023">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="299.0" prefHeight="32.0" prefWidth="315.0" text="40">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Text fill="#116ab4" layoutX="73.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Refeição:" wrappingWidth="82.66676330566406">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="75.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dia:" wrappingWidth="82.66676330566406">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="75.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número de inscritos:" wrappingWidth="202.666748046875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="281.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHECK-IN COM CÓDIGO DE BARRAS" wrappingWidth="565.3334045410156">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="403.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leitura do código de barras" wrappingWidth="288.00006103515625">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="161.0" fitWidth="228.0" layoutX="420.0" layoutY="448.0">
+         <image>
+            <Image url="@../../../../assets/codigo-de-barras.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="108.0" layoutX="875.0" layoutY="5.0">
+         <image>
+            <Image url="@../../../../assets/voltar_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="73.0" layoutX="965.0" layoutY="25.0">
+         <image>
+            <Image url="@../../../../assets/botao-home%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

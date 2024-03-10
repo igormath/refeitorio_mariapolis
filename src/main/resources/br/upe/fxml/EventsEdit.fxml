@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.upe.centromariapolis.HomePageEventosController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="102.0" stroke="#116ab4" strokeType="INSIDE" strokeWidth="3.0" width="1064.0" />
+      <ImageView fitHeight="55.0" fitWidth="520.0" layoutX="35.0" layoutY="31.0">
+         <image>
+            <Image url="@../../../../assets/mariapolislogo.png" />
+         </image>
+      </ImageView>
+      <Text fill="#116ab4" layoutX="43.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EVENTO:" wrappingWidth="245.33343505859375">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="35.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome do evento:" wrappingWidth="176.00006103515625">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="35.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data (início):" wrappingWidth="176.00006103515625">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="35.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data (fim):" wrappingWidth="176.00006103515625">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button alignment="CENTER" layoutX="873.0" layoutY="675.0" mnemonicParsing="false" onAction="#handleCheckinAction" prefHeight="72.0" prefWidth="163.0" text="Alterar" textAlignment="CENTER" textFill="#116ab4" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="96.0" fitWidth="108.0" layoutX="875.0" layoutY="5.0">
+         <image>
+            <Image url="@../../../../assets/voltar_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="73.0" layoutX="970.0" layoutY="25.0">
+         <image>
+            <Image url="@../../../../assets/botao-home%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="255.0" layoutY="133.0" prefHeight="70.0" prefWidth="420.0" text="Nome do evento" textFill="#116ab4">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Text fill="#116ab4" layoutX="380.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Atual" wrappingWidth="69.33340454101562">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="680.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Novo" wrappingWidth="69.33340454101562">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="35.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Organizador(nome):" wrappingWidth="217.33340454101562">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="35.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Organizador(telefone):" wrappingWidth="217.33340454101562">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="35.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor:" wrappingWidth="217.33340454101562">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ListView layoutX="55.0" layoutY="505.0" prefHeight="200.0" prefWidth="315.0" />
+      <ListView layoutX="400.0" layoutY="505.0" prefHeight="200.0" prefWidth="315.0" />
+      <Label layoutX="270.0" layoutY="260.0" prefHeight="32.0" prefWidth="285.0" text="Nome do evento" />
+      <Label layoutX="264.0" layoutY="350.0" prefHeight="32.0" prefWidth="285.0" text="Nome do organizador" />
+      <Label layoutX="264.0" layoutY="380.0" prefHeight="32.0" prefWidth="285.0" text="Nome do organizador" />
+      <TextField layoutX="605.0" layoutY="264.0" prefHeight="25.0" prefWidth="273.0" />
+      <TextField layoutX="605.0" layoutY="355.0" prefHeight="25.0" prefWidth="273.0" />
+      <TextField layoutX="605.0" layoutY="388.0" prefHeight="25.0" prefWidth="273.0" />
+      <Label layoutX="265.0" layoutY="410.0" prefHeight="32.0" prefWidth="285.0" text="Valor" />
+      <TextField layoutX="605.0" layoutY="420.0" prefHeight="25.0" prefWidth="273.0" />
+      <Text fill="#116ab4" layoutX="57.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Participantes" wrappingWidth="148.0000762939453">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#116ab4" layoutX="400.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Atividades do evento" wrappingWidth="236.25">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button alignment="CENTER" layoutX="146.0" layoutY="709.0" mnemonicParsing="false" onAction="#handleCheckinAction" prefHeight="9.0" prefWidth="118.0" text="UP CSV" textAlignment="CENTER" textFill="#116ab4" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="496.0" layoutY="709.0" mnemonicParsing="false" onAction="#handleCheckinAction" prefHeight="9.0" prefWidth="118.0" text="UP CSV" textAlignment="CENTER" textFill="#116ab4" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <DatePicker layoutX="243.0" layoutY="295.0" />
+      <DatePicker layoutX="243.0" layoutY="325.0" />
+      <DatePicker layoutX="605.0" layoutY="295.0" />
+      <DatePicker layoutX="605.0" layoutY="325.0" />
+   </children>
+</AnchorPane>
