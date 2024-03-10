@@ -15,12 +15,12 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="100.0" stroke="#116ab4" strokeType="INSIDE" strokeWidth="3.0" width="1044.0" />
       <ImageView fitHeight="55.0" fitWidth="520.0" layoutX="35.0" layoutY="31.0">
          <image>
-            <Image url="@../../../../assets/mariapolislogo.png" />
+            <Image url="@../../../assets/mariapolislogo.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="75.0" fitWidth="79.0" layoutX="840.0" layoutY="12.0">
          <image>
-            <Image url="@../../../../assets/botao-home-2.png" />
+            <Image url="@../../../assets/botao-home-2.png" />
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="325.0" layoutX="288.0" layoutY="405.0" stroke="WHITE" strokeType="INSIDE" width="497.0" />
@@ -77,17 +77,17 @@
       </Text>
       <ImageView fitHeight="161.0" fitWidth="228.0" layoutX="420.0" layoutY="448.0">
          <image>
-            <Image url="@../../../../assets/codigo-de-barras.png" />
+            <Image url="@../../../assets/codigo-de-barras.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="96.0" fitWidth="108.0" layoutX="875.0" layoutY="5.0">
          <image>
-            <Image url="@../../../../assets/voltar_2.png" />
+            <Image url="@../../../assets/voltar_2.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="53.0" fitWidth="73.0" layoutX="965.0" layoutY="25.0">
          <image>
-            <Image url="@../../../../assets/botao-home%20(1).png" />
+            <Image url="@../../../assets/botao-home%20(1).png" />
          </image>
       </ImageView>
    </children>

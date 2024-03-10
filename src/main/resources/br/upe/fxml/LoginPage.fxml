@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
+<!--<?import javafx.scene.control.TextField?>-->
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -13,8 +14,7 @@
 
 <?import br.upe.util.MaskedTextField?>
 
-<?import javafx.scene.control.TextField?>
-<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: rgba(33, 123, 205, 0.29);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.upe.controller.LoginPageController">
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: rgba(33, 123, 205, 0.29);" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.upe.controller.LoginPageController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="100.0" stroke="#116ab4" strokeType="INSIDE" strokeWidth="3.0" width="1024.0" AnchorPane.topAnchor="-8.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="335.0" layoutX="233.0" layoutY="229.0" stroke="#116ab4" strokeType="INSIDE" strokeWidth="3.0" width="600.0" />
@@ -37,13 +37,13 @@
       </Text>
       <ImageView fitHeight="60.0" fitWidth="500.0" layoutX="275.0" layoutY="25.0">
          <image>
-            <Image url="@../../../../assets/mariapolislogo.png" />
+            <Image url="@../../../assets/mariapolislogo.png" />
          </image>
       </ImageView>
       <Circle fill="WHITE" layoutX="338.0" layoutY="320.0" radius="57.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-      <ImageView layoutX="-44.0" layoutY="-60.0" x="327.0" y="321.0">
+      <ImageView fitHeight="157.0" fitWidth="162.0" layoutX="-46.0" layoutY="-3.0" x="327.0" y="321.0">
          <image>
-<!--            <Image url="@../../../../assets/avatar.png" />-->
+            <Image url="@../../../assets/perfil.png" />
          </image>
       </ImageView>
       <Label fx:id="msgError" layoutX="492.0" layoutY="431.0" prefHeight="33.0" prefWidth="234.0" text=" " textAlignment="CENTER" textFill="RED" />

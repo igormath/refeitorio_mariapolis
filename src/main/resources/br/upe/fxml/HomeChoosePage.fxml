@@ -23,7 +23,7 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="102.0" stroke="#116ab4" strokeType="INSIDE" strokeWidth="3.0" width="1056.0" />
       <ImageView fitHeight="55.0" fitWidth="520.0" layoutX="35.0" layoutY="31.0">
          <image>
-            <Image url="@../../../../assets/mariapolislogo.png" />
+            <Image url="@../../../assets/mariapolislogo.png" />
          </image>
       </ImageView>
       <Text fill="#116ab4" layoutX="40.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O que deseja acessar agora?" textAlignment="CENTER" wrappingWidth="1016.0000610351562">
@@ -38,17 +38,17 @@
       </Button>
       <ImageView fitHeight="56.0" fitWidth="59.0" layoutX="400.0" layoutY="508.0">
          <image>
-            <Image url="@../../../../assets/restaurante.png" />
+            <Image url="@../../../assets/restaurante.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="77.0" fitWidth="68.0" layoutX="395.0" layoutY="601.0">
          <image>
-            <Image url="@../../../../assets/perfil.png" />
+            <Image url="@../../../assets/perfil.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="69.0" fitWidth="63.0" layoutX="400.0" layoutY="406.0">
          <image>
-            <Image url="@../../../../assets/evento.png" />
+            <Image url="@../../../assets/evento.png" />
          </image>
       </ImageView>
    </children>

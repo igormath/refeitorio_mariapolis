@@ -16,17 +16,17 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="100.0" stroke="#116ab4" strokeType="INSIDE" strokeWidth="3.0" width="1024.0" />
       <ImageView fitHeight="55.0" fitWidth="520.0" layoutX="35.0" layoutY="31.0">
          <image>
-            <Image url="@../../../../assets/mariapolislogo.png" />
+            <Image url="@../../../assets/mariapolislogo.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="75.0" fitWidth="70.0" layoutX="935.0" layoutY="12.0">
          <image>
-            <Image url="@../../../../assets/avatar.png" />
+            <Image url="@../../../assets/avatar.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="75.0" fitWidth="79.0" layoutX="840.0" layoutY="12.0">
          <image>
-            <Image url="@../../../../assets/botao-home-2.png" />
+            <Image url="@../../../assets/botao-home-2.png" />
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="362.0" layoutX="207.0" layoutY="348.0" stroke="#116ab4" strokeType="INSIDE" width="625.0" />
@@ -73,22 +73,22 @@
       </RadioButton>
       <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="451.0" layoutY="470.0">
          <image>
-            <Image url="@../../../../assets/image%209.png" />
+            <Image url="@../../../assets/image%209.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="450.0" layoutY="500.0">
          <image>
-            <Image url="@../../../../assets/image%2010.png" />
+            <Image url="@../../../assets/image%2010.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="360.0" layoutY="530.0">
          <image>
-            <Image url="@../../../../assets/image%2011.png" />
+            <Image url="@../../../assets/image%2011.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="390.0" layoutY="560.0">
          <image>
-            <Image url="@../../../../assets/image%208.png" />
+            <Image url="@../../../assets/image%208.png" />
          </image>
       </ImageView>
       <Label layoutX="265.0" layoutY="205.0" prefHeight="32.0" prefWidth="212.0" text="Almoço">
@@ -123,12 +123,12 @@
       </Text>
       <ImageView fitHeight="96.0" fitWidth="108.0" layoutX="845.0" layoutY="9.0">
          <image>
-            <Image url="@../../../../assets/voltar_2.png" />
+            <Image url="@../../../assets/voltar_2.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="53.0" fitWidth="73.0" layoutX="940.0" layoutY="29.0">
          <image>
-            <Image url="@../../../../assets/botao-home%20(1).png" />
+            <Image url="@../../../assets/botao-home%20(1).png" />
          </image>
       </ImageView>
    </children>

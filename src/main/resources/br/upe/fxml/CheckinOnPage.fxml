@@ -14,7 +14,7 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="100.0" stroke="#116ab4" strokeType="INSIDE" strokeWidth="3.0" width="1024.0" />
       <ImageView fitHeight="55.0" fitWidth="520.0" layoutX="35.0" layoutY="31.0">
          <image>
-            <Image url="@../../../../assets/mariapolislogo.png" />
+            <Image url="@../../../assets/mariapolislogo.png" />
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="305.0" layoutX="254.0" layoutY="427.0" stroke="#46a15b" strokeType="INSIDE" strokeWidth="3.0" width="556.0" />
@@ -26,7 +26,7 @@
       </Text>
       <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="157.0" layoutY="365.0">
          <image>
-            <Image url="@../../../../assets/verificado%201.png" />
+            <Image url="@../../../assets/verificado%201.png" />
          </image>
       </ImageView>
       <Text fill="#116ab4" layoutX="345.0" layoutY="538.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.3" text="Refeição: Almoço" textAlignment="CENTER">
