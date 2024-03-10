@@ -7,20 +7,20 @@ public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_employee;
-    private String name_employee;
+    private String nome;
     private String cpf;
     private String email;
-    private String pass;
+    private String senha;
 
     public Employee() {
     }
 
-    public Employee(Long id_employee, String name_employee, String cpf, String email, String pass) {
+    public Employee(Long id_employee, String nome, String cpf, String email, String senha) {
         this.id_employee = id_employee;
-        this.name_employee = name_employee;
+        this.nome = nome;
         this.cpf = cpf;
         this.email = email;
-        this.pass = pass;
+        this.senha = senha;
     }
 
     public Long getId_employee() {
@@ -32,11 +32,11 @@ public class Employee {
     }
 
     public String getName() {
-        return name_employee;
+        return nome;
     }
 
-    public void setName(String name_employee) {
-        this.name_employee = name_employee;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getCpf() {
@@ -55,11 +55,11 @@ public class Employee {
         this.email = email;
     }
 
-    public String getPass() {
-        return pass;
+    public String getSenha() {
+        return senha;
     }
 
-    public void setPass(String pass) {
-        this.pass = pass;
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 }

@@ -1,44 +1,59 @@
 package br.upe.entities;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
 public class Customer {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_customer;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_customer_generator")
+    @SequenceGenerator(name = "id_customer_generator", sequenceName = "id_customer_seq", allocationSize = 1)
+    @Column(name = "id_customer")
+    private Long id;
+
+    @Column(length = 20, nullable = false)
     private String cpf;
-    private String name_customer;
-    private Date data_nascimento;
+
+    @Column(length = 100, nullable = false)
+    private String nome;
+
+    @Column(name = "data_nascimento")
+    private Date dataNascimento;
+
+    @Column(length = 100)
     private String email;
-    private String phone;
+
+    @Column(length = 20)
+    private String telefone;
+
+    @Column(length = 10)
     private String sexo;
+
+    @Column(length = 15)
     private String cep;
-    @Column(precision = 10, scale = 2)
-    private Double saldo;
 
-    public Customer() {
+    @Column(name = "saldo_cafe", precision = 5, scale = 2)
+    private BigDecimal saldo_cafe;
+
+    @Column(name = "saldo_almoco", precision = 5, scale = 2)
+    private BigDecimal saldo_almoco;
+
+    @Column(name = "saldo_jantar", precision = 5, scale = 2)
+    private BigDecimal saldo_jantar;
+
+    public Long getId() {
+        return id;
     }
 
-    public Customer(Long id_customer, String cpf, String name_customer, Date data_nascimento, String email, String phone, String sexo, String cep, Double saldo) {
-        this.id_customer = id_customer;
-        this.cpf = cpf;
-        this.name_customer = name_customer;
-        this.data_nascimento = data_nascimento;
-        this.email = email;
-        this.phone = phone;
-        this.sexo = sexo;
-        this.cep = cep;
-        this.saldo = saldo;
-    }
-
-    public Long getId_customer() {
-        return id_customer;
-    }
-
-    public void setId_customer(Long id_customer) {
-        this.id_customer = id_customer;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getCpf() {
@@ -49,20 +64,20 @@ public class Customer {
         this.cpf = cpf;
     }
 
-    public String getName() {
-        return name_customer;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name_customer) {
-        this.name_customer = name_customer;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public Date getDataNascimento() {
-        return data_nascimento;
+        return dataNascimento;
     }
 
-    public void setDataNascimento(Date data_nascimento) {
-        this.data_nascimento = data_nascimento;
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 
     public String getEmail() {
@@ -73,12 +88,12 @@ public class Customer {
         this.email = email;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
     public String getSexo() {
@@ -97,11 +112,27 @@ public class Customer {
         this.cep = cep;
     }
 
-    public Double getSaldo() {
-        return saldo;
+    public BigDecimal getSaldo_cafe() {
+        return saldo_cafe;
     }
 
-    public void setSaldo(Double saldo) {
-        this.saldo = saldo;
+    public void setSaldo_cafe(BigDecimal saldo_cafe) {
+        this.saldo_cafe = saldo_cafe;
+    }
+
+    public BigDecimal getSaldo_almoco() {
+        return saldo_almoco;
+    }
+
+    public void setSaldo_almoco(BigDecimal saldo_almoco) {
+        this.saldo_almoco = saldo_almoco;
+    }
+
+    public BigDecimal getSaldo_jantar() {
+        return saldo_jantar;
+    }
+
+    public void setSaldo_jantar(BigDecimal saldo_jantar) {
+        this.saldo_jantar = saldo_jantar;
     }
 }

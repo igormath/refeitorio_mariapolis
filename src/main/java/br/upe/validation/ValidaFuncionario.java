@@ -9,12 +9,12 @@ public class ValidaFuncionario {
     public ValidaFuncionario() {
     }
 
-    public static boolean isValido(String cpf, String senha){
-        if (!ValidaCpf.isCPF(cpf)){
+    public static boolean isValido(String cpf, String senha) {
+        if (!ValidaCpf.isCPF(cpf)) {
             return false;
         }
 
-        if (senha.length() < 6){
+        if (senha.length() < 6) {
             return false;
         }
 
@@ -22,8 +22,8 @@ public class ValidaFuncionario {
         List<Employee> employees = facade.getAllEmployees();
 
         for (Employee employee : employees) {
-            if (cpf.equals(employee.getCpf())){
-                if (senha.equals(employee.getPass())){
+            if (cpf.equals(employee.getCpf())) {
+                if (senha.equals(employee.getSenha())) {
                     return true;
                 }
             }
