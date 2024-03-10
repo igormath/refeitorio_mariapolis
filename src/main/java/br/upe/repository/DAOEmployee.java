@@ -7,6 +7,7 @@ import javax.persistence.Query;
 import java.util.List;
 
 public class DAOEmployee {
+
     public DAOEmployee() {
     }
 
