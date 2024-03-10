@@ -1,33 +1,31 @@
 package br.upe.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 public class Customer {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_customer;
     private String cpf;
-    private String name;
-    private Date dataNascimento;
+    private String name_customer;
+    private Date data_nascimento;
     private String email;
     private String phone;
     private String sexo;
     private String cep;
+    @Column(precision = 10, scale = 2)
     private Double saldo;
 
     public Customer() {
     }
 
-    public Customer(Long id_customer, String cpf, String name, Date dataNascimento, String email, String phone, String sexo, String cep, Double saldo) {
+    public Customer(Long id_customer, String cpf, String name_customer, Date data_nascimento, String email, String phone, String sexo, String cep, Double saldo) {
         this.id_customer = id_customer;
         this.cpf = cpf;
-        this.name = name;
-        this.dataNascimento = dataNascimento;
+        this.name_customer = name_customer;
+        this.data_nascimento = data_nascimento;
         this.email = email;
         this.phone = phone;
         this.sexo = sexo;
@@ -52,19 +50,19 @@ public class Customer {
     }
 
     public String getName() {
-        return name;
+        return name_customer;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String name_customer) {
+        this.name_customer = name_customer;
     }
 
     public Date getDataNascimento() {
-        return dataNascimento;
+        return data_nascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
-        this.dataNascimento = dataNascimento;
+    public void setDataNascimento(Date data_nascimento) {
+        this.data_nascimento = data_nascimento;
     }
 
     public String getEmail() {

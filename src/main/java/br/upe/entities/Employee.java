@@ -5,9 +5,9 @@ import javax.persistence.*;
 @Entity
 public class Employee {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_employee;
-    private String name;
+    private String name_employee;
     private String cpf;
     private String email;
     private String pass;
@@ -15,9 +15,9 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(Long id_employee, String name, String cpf, String email, String pass) {
+    public Employee(Long id_employee, String name_employee, String cpf, String email, String pass) {
         this.id_employee = id_employee;
-        this.name = name;
+        this.name_employee = name_employee;
         this.cpf = cpf;
         this.email = email;
         this.pass = pass;
@@ -32,11 +32,11 @@ public class Employee {
     }
 
     public String getName() {
-        return name;
+        return name_employee;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String name_employee) {
+        this.name_employee = name_employee;
     }
 
     public String getCpf() {
