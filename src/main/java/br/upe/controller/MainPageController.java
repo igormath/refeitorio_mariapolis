@@ -73,18 +73,17 @@ public class MainPageController {
     Facade facade = new Facade();
 
     @FXML
-    public void initialize(){
+    public void initialize() {
         loadTableViewCustomers();
         tableViewCustomers.getSelectionModel().selectedItemProperty().addListener(
-                ((observable, oldValue, newValue) -> selectItemTableViewCustomers(newValue))
-        );
+                ((observable, oldValue, newValue) -> selectItemTableViewCustomers(newValue)));
     }
 
-    public void loadTableViewCustomers(){
+    public void loadTableViewCustomers() {
         tableColumnCustomerCpf.setCellValueFactory(new PropertyValueFactory<>("cpf"));
-        tableColumnCustomerName.setCellValueFactory(new PropertyValueFactory<>("name"));
+        tableColumnCustomerName.setCellValueFactory(new PropertyValueFactory<>("nome"));
         tableColumnCustomerEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
-        tableColumnCustomerSaldo.setCellValueFactory(new PropertyValueFactory<>("saldo"));
+        tableColumnCustomerSaldo.setCellValueFactory(new PropertyValueFactory<>("saldo_cafe"));
 
         customers = facade.getAllCustomers();
 
@@ -92,14 +91,14 @@ public class MainPageController {
         tableViewCustomers.setItems(observableListCustomers);
     }
 
-    public void selectItemTableViewCustomers(Customer customer){
-        if (customer != null){
-            labelCustomerName.setText(customer.getName());
+    public void selectItemTableViewCustomers(Customer customer) {
+        if (customer != null) {
+            labelCustomerName.setText(customer.getNome());
             labelCustomerCpf.setText(customer.getCpf());
             labelCustomerEmail.setText(customer.getEmail());
-            labelCustomerPhone.setText(customer.getPhone());
+            labelCustomerPhone.setText(customer.getTelefone());
             labelCustomerCep.setText(customer.getCep());
-            labelCustomerSaldo.setText(String.valueOf(customer.getSaldo()));
+            labelCustomerSaldo.setText(String.valueOf(customer.getSaldo_cafe()));
         } else {
             labelCustomerName.setText("");
             labelCustomerCpf.setText("");

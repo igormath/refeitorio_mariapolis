@@ -1,31 +1,17 @@
 package br.upe.repository;
 
 import br.upe.entities.Event;
+import br.upe.util.JPAUtil;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 
 public class DAOEvent {
 
     public DAOEvent() {
     }
 
-    // Usa o padrão Factory para criar um gerenciador de entidade
-    private EntityManager getEntityManager() {
-        EntityManagerFactory factory = null;
-        EntityManager entityManager = null;
-        try {
-            factory = Persistence.createEntityManagerFactory("centro_mariapolis");
-            entityManager = factory.createEntityManager();
-        } finally {
-            factory.close();
-        }
-        return entityManager;
-    }
-
     public Event createOrUpdate(Event event) throws Exception {
-        EntityManager em = getEntityManager();
+        EntityManager em = JPAUtil.getEntityManager();
         try {
             em.getTransaction().begin();
             System.out.println("Inserindo o evento: " + event.getNome());
@@ -45,7 +31,7 @@ public class DAOEvent {
     }
 
     public void delete(Event event) throws Exception {
-        EntityManager em = getEntityManager();
+        EntityManager em = JPAUtil.getEntityManager();
         try {
             em.getTransaction().begin();
             Event foundEvent = findById(event.getId());
@@ -58,7 +44,7 @@ public class DAOEvent {
     }
 
     public Event findById(Long id_event) throws Exception {
-        EntityManager em = getEntityManager();
+        EntityManager em = JPAUtil.getEntityManager();
         Event event = null;
         try {
             event = em.find(Event.class, id_event);
