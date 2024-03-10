@@ -1,6 +1,7 @@
-package br.upe.util;
+package br.upe.repository;
 
 import br.upe.entities.Customer;
+import br.upe.util.JPAUtil;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
