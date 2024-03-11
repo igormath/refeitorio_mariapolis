@@ -182,4 +182,13 @@ public class MainPageController {
 
         return controller.isButtonConfirmClicked();
     }
+
+    @FXML
+    void handleLoginButton(ActionEvent event) {
+        try {
+            SceneChanger.changeScene("LoginPage");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
