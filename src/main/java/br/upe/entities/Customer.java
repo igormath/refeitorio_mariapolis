@@ -104,4 +104,8 @@ public class Customer {
     public void setSaldo(Double saldo) {
         this.saldo = saldo;
     }
+
+    public void deductMealCost(){
+        saldo -= 10;
+    }
 }
