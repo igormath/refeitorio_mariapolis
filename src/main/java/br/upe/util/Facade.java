@@ -21,6 +21,17 @@ public class Facade {
         return DAOCustomer.read();
     }
 
+    public void createCustomer(Customer customer){
+        DAOCustomer.create(customer);
+    }
+
+    public void updateCustomer(Customer customer){
+        DAOCustomer.update(customer);
+    }
+    public void deleteCustomer(Customer customer){
+        DAOCustomer.delete(customer);
+    }
+
     public List<Employee> getAllEmployees(){
         return DAOEmployee.read();
     }
