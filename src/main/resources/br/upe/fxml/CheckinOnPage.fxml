@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.upe.centromariapolis.CheckinOnPage">
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.upe.controller.CheckinOnPageController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="100.0" stroke="#116ab4" strokeType="INSIDE" strokeWidth="3.0" width="1024.0" />
       <ImageView fitHeight="55.0" fitWidth="520.0" layoutX="35.0" layoutY="31.0">
@@ -18,76 +20,73 @@
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f0f0" height="305.0" layoutX="254.0" layoutY="427.0" stroke="#46a15b" strokeType="INSIDE" strokeWidth="3.0" width="556.0" />
-      <ChoiceBox layoutX="23.0" layoutY="222.0" prefHeight="26.0" prefWidth="2.0" />
-      <Text fill="#116ab4" layoutX="375.0" layoutY="475.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.3" text="Check-in realizado com sucesso!" textAlignment="CENTER">
+      <Text fill="#116ab4" layoutX="366.0" layoutY="513.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.3" text="Check-in realizado com sucesso!" textAlignment="CENTER">
          <font>
             <Font size="25.0" />
          </font>
       </Text>
       <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="157.0" layoutY="365.0">
          <image>
-            <Image url="@../../../assets/verificado%201.png" />
+            <Image url="@../../../assets/verificado 1.png" />
          </image>
       </ImageView>
-      <Text fill="#116ab4" layoutX="345.0" layoutY="538.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.3" text="Refeição: Almoço" textAlignment="CENTER">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-      <Text fill="#116ab4" layoutX="345.0" layoutY="560.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.3" text="Dia: Domingo, 12 de novembro de 2023" textAlignment="CENTER">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-      <Text fill="#116ab4" layoutX="344.0" layoutY="584.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.3" text="Horário: 12h32" textAlignment="CENTER">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-      <Text fill="#116ab4" layoutX="344.0" layoutY="624.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.3" text="Acesso autorizado." textAlignment="CENTER">
+      <Text fill="#116ab4" layoutX="443.0" layoutY="574.0" stroke="#116ab4" strokeType="OUTSIDE" strokeWidth="0.3" text="Acesso autorizado." textAlignment="CENTER">
          <font>
             <Font size="25.0" />
          </font>
       </Text>
-      <Text fill="#0909c6" layoutX="381.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Retornando para a página de check-in...">
+      <Text fill="#116ab4" layoutX="415.0" layoutY="647.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Retornando para a página de check-in...">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text fill="#116ab4" layoutX="271.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHECK-IN COM CÓDIGO DE BARRAS" wrappingWidth="565.3334045410156">
+      <Text fill="#116ab4" layoutX="249.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHECK-IN" textAlignment="CENTER" wrappingWidth="565.3334045410156">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Text>
-      <Label layoutX="176.0" layoutY="223.0" prefHeight="32.0" prefWidth="212.0" text="Almoço">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="128.0" layoutY="258.0" prefHeight="32.0" prefWidth="315.0" text="Domingo, 12 de novembro de 2023">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="268.0" layoutY="298.0" prefHeight="32.0" prefWidth="315.0" text="40">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
-      <Text fill="#116ab4" layoutX="73.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Refeição:" wrappingWidth="82.66676330566406">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Text>
-      <Text fill="#116ab4" layoutX="75.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dia:" wrappingWidth="82.66676330566406">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Text>
-      <Text fill="#116ab4" layoutX="75.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número de inscritos:" wrappingWidth="202.666748046875">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Text>
+      <GridPane layoutX="385.0" layoutY="241.0" prefHeight="90.0" prefWidth="293.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Cliente:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label text="CPF:" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label text="Novo Saldo:" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelCheckInCliente" text="Label" GridPane.columnIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelCheckInCpf" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelCheckInSaldo" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
    </children>
 </AnchorPane>
