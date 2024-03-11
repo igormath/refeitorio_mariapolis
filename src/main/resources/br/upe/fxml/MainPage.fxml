@@ -30,7 +30,7 @@
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <Button fx:id="buttonInserir" layoutX="720.0" layoutY="488.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="248.0" text="Inserir" textAlignment="CENTER" textFill="#116ab4">
+      <Button fx:id="buttonInserir" layoutX="720.0" layoutY="488.0" mnemonicParsing="false" onAction="#handleButtonInserir" prefHeight="56.0" prefWidth="248.0" text="Inserir" textAlignment="CENTER" textFill="#116ab4">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
@@ -40,7 +40,7 @@
             <Image url="@../../../assets/mariapolislogo.png" />
          </image>
       </ImageView>
-      <Button fx:id="buttonAlterar" layoutX="720.0" layoutY="560.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="248.0" text="Alterar" textAlignment="CENTER" textFill="#116ab4">
+      <Button fx:id="buttonAlterar" layoutX="720.0" layoutY="560.0" mnemonicParsing="false" onAction="#handleButtonAlterar" prefHeight="56.0" prefWidth="248.0" text="Alterar" textAlignment="CENTER" textFill="#116ab4">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -60,7 +60,7 @@
             <Image url="@../../../assets/codigo-de-barras.png" />
          </image>
       </ImageView>
-      <Button fx:id="buttonRemover" layoutX="720.0" layoutY="634.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="248.0" text="Remover" textAlignment="CENTER" textFill="#116ab4">
+      <Button fx:id="buttonRemover" layoutX="720.0" layoutY="634.0" mnemonicParsing="false" onAction="#handleButtonRemover" prefHeight="56.0" prefWidth="248.0" text="Remover" textAlignment="CENTER" textFill="#116ab4">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
